@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Control Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Control Panel</h1>
+
+  <img src="contrlpanel.jpeg" alt="Elevator panel">
+
+  <p>The buttons flicker randomly.  
+  One lights up... but it's not a floor number.</p>
+
+  <audio autoplay>
+    <source src="creepstatic.mp3" type="audio/mpeg">
+  </audio>
+
+<script>document.body.addEventListener("click", () => {
+    if (!played) {
+      document.getElementById("sound").play();
+      played = true;
+    }
+  });</script>
+  <a class="button" href="end.html">Press the strange button</a>
+  <a class="button" href="index.html">Back away slowly</a>
+</div>
+
+</body>
+</html>

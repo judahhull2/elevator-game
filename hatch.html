@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Hatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>The Hatch</h1>
+
+  <img src="hatchlol.jpeg" alt="Elevator hatch">
+
+  <p>You push the hatch open.  
+  Pitch black.  
+  Something shifts in the shaft.</p>
+
+  <audio autoplay>
+    <source src="hatchspooky.mp3" type="audio/mpeg">
+  </audio>
+
+<script>
+  let played = false;
+  document.body.addEventListener("click", () => {
+    if (!played) {
+      document.getElementById("sound").play();
+      played = true;
+    }
+  });
+</script>
+
+  <a class="button" href="end.html">Climb up</a>
+  <a class="button" href="index.html">Drop back down</a>
+</div>
+
+</body>
+</html>

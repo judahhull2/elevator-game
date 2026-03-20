@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stuck</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Stuck</h1>
+
+  <img src="elevatorindex.jpeg" alt="Elevator interior">
+
+  <p>The elevator jerks to a stop.  
+  The lights flicker.  
+  You are between floors.</p>
+
+  <audio autoplay loop>
+    <source src="creepyelevator.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>let played = false;
+
+  document.body.addEventListener("click", function() {
+    if (!played) {
+      document.getElementById("bgSound").play();
+      played = true;
+    }
+  });</script>
+
+  <a class="button" href="panel.html">Check the control panel</a>
+  <a class="button" href="hatch.html">Climb through the hatch</a>
+</div>
+
+</body>
+</html>
